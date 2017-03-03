@@ -1,0 +1,106 @@
+@import "variables";
+
+footer {
+  padding-top: 60px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .footer-menu {
+    margin-bottom: 28px;
+
+    .nav-pills .nav-link.active {
+      color: $dark-orange-color;
+      background-color: transparent;
+    }
+
+    .nav-link {
+      margin: 0 16px;
+      color: $dark-grey-color;
+      font-size: 13px;
+      font-family: $font-latoregular;
+      text-transform: uppercase;
+
+      &:hover {
+        color: $light-orange-color;
+      }
+    }
+  }
+
+  .phone-number {
+    font-size: 23px;
+    font-family: $font-latoregular;
+    color: $dark-grey-color;
+    background: url("../images/phone.png") 0 50% no-repeat;
+    padding-left: 18px;
+    margin-bottom: 26px;
+  }
+
+  .social {
+    margin-bottom:  60px;
+
+    li {
+      display: inline-block;
+      margin: 0 2px;
+    }
+
+    .tw {
+      background: url("../images/tw.png") no-repeat;
+      height: 15px;
+      width: 16px;
+      display: inline-block;
+    }
+
+    .fb {
+      background: url("../images/fb.png") no-repeat;
+      height: 18px;
+      width: 10px;
+      display: inline-block;
+    }
+
+    .go {
+      background: url("../images/g+.png") no-repeat;
+      height: 18px;
+      width: 17px;
+      display: inline-block;
+    }
+
+    .in {
+      background: url("../images/in.png") no-repeat;
+      height: 16px;
+      width: 16px;
+      display: inline-block;
+    }
+  }
+
+  .footer-info {
+    background-color: $blue-color;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+
+    p {
+      font-size: 13px;
+      font-family: $font-main;
+      margin-bottom: 0;
+      color: #fff;
+
+      a {
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media (max-width: 738px) {
+  .footer-menu {
+
+    .nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

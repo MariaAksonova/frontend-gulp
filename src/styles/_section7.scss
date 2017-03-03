@@ -1,0 +1,68 @@
+@import "variables";
+
+.newsletter {
+  text-align: center;
+
+  input {
+    border: 2px solid #e2e9f0;
+  }
+
+  .input-email {
+    width: 380px;
+  }
+
+  .map {
+    background: url("../images/bg-address.png") no-repeat;
+    height: 550px;
+    position: relative;
+    margin-bottom: 46px;
+
+    .gray-shape {
+      position: absolute;
+      left: calc(50% - 141px);
+      top: 10%;
+      background: url("../images/gray-shape.png") no-repeat;
+      height: 295px;
+      width: 282px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h5 {
+        font-size: 15px;
+        font-family: $font-bold;
+        color: #fff;
+        text-transform: uppercase;
+      }
+
+      p {
+        font-size: 13px;
+        font-family: $font-main;
+        color: #aeb7ba;
+        margin-bottom: 8px;
+      }
+
+      .orange-text {
+        font-size: 13px;
+        font-family: $font-main;
+        color: $orange-color;
+      }
+    }
+
+    .logo {
+      position: absolute;
+      bottom: 26%;
+      left: calc(50% - 25px);
+    }
+  }
+}
+
+@media (max-width: 738px) {
+  .newsletter {
+
+    .input-email {
+      width: 280px;
+    }
+  }
+}

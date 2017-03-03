@@ -1,0 +1,58 @@
+@import "variables";
+
+.services {
+  text-align: center;
+
+  .section-header {
+    color: $dark-grey-color;
+  }
+
+  .services-list {
+    margin-top: 80px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    li {
+      padding-left: 80px;
+      width: 510px;
+      text-align: left;
+      margin-bottom: 70px;
+
+      &:nth-child(1) {
+        background: url(../images/icon1.png) no-repeat;
+      }
+      &:nth-child(2) {
+        background: url(../images/icon2.png) no-repeat;
+      }
+      &:nth-child(3) {
+        background: url(../images/icon3.png) no-repeat;
+      }
+      &:nth-child(4) {
+        background: url(../images/icon4.png) no-repeat;
+      }
+      &:nth-child(5) {
+        background: url(../images/icon5.png) no-repeat;
+      }
+      &:nth-child(6) {
+        background: url(../images/icon6.png) 2% 0 no-repeat;
+      }
+    }
+
+    h4 {
+      font-family: $font-bold;
+      font-size: 16px;
+      text-transform: uppercase;
+      color: $dark-grey-color;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-family: $font-main;
+      font-size: 13px;
+      color: $main-grey-color;
+      line-height: 22px;
+    }
+  }
+}

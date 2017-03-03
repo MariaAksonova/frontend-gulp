@@ -1,0 +1,52 @@
+@import "variables";
+
+.about-us {
+  display: flex;
+  padding-top: 0;
+
+  div {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .bg-area {
+    background: url("../images/bg.png") no-repeat;
+    background-size: cover;
+  }
+
+  .text-area {
+    background-color: $light-orange-color;
+    color: #fff;
+    padding: 152px 0 152px 80px;
+
+    p {
+      width: 80%;
+      font-size: 13px;
+      line-height: 24px;
+    }
+  }
+
+  .main-btn {
+    background: transparent;
+    border: 1px solid #e7ad48;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 738px) {
+  .about-us {
+    flex-direction: column;
+
+    .bg-area {
+      height: 300px;
+    }
+
+    .text-area {
+      padding: 60px 20px;
+    }
+
+    div {
+      width: 100%;
+    }
+  }
+}

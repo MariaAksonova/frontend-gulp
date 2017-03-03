@@ -1,0 +1,101 @@
+@import "variables";
+@import "fonts";
+@import "header";
+@import "section1";
+@import "section2";
+@import "section3";
+@import "section4";
+@import "section5";
+@import "section6";
+@import "section7";
+@import "footer";
+
+section {
+  padding-top: 140px;
+}
+
+.section-header {
+
+  h1 {
+    font-size: 35px;
+    font-family: $font-gotham;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    font-size: 30px;
+    font-family: $font-gotham;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: $font-main;
+  }
+}
+
+.input-name {
+  background: url("../images/name.png") no-repeat 5%;
+  background-color: #fff;
+}
+
+.input-email {
+  background: url("../images/email.png") no-repeat 5%;
+  background-color: #fff;
+}
+
+.input-number {
+  background: url("../images/phone.png") no-repeat 5%;
+  background-color: #fff;
+}
+
+input {
+  border: none;
+  border-radius: 2px;
+  height: 46px;
+  width: 280px;
+  font-family: $font-main;
+  font-size: 13px;
+  color: #a9a9a9;
+  padding-left: 40px;
+  margin: 0 4px;
+}
+
+form {
+  margin-top: 28px;
+  margin-bottom: 60px;
+}
+
+.submit-btn {
+  background-color: $orange-color;
+  padding: 0 42px;
+  margin: 0 4px;
+}
+
+button {
+  font-size: 14px;
+  font-family: $font-latoregular;
+  text-transform: uppercase;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  height: 46px;
+}
+
+li {
+  list-style: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+.red-frame {
+  border: 1px solid red!important;
+}
+
+@media (max-width: 738px) {
+  section {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,113 @@
+@import "variables";
+
+.clients {
+  text-align: center;
+  background-color: $light-orange-color;
+  padding-bottom: 160px;
+
+  .section-header {
+    color: #fff;
+  }
+
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 56px;
+
+    li {
+      width: 530px;
+      height: 240px;
+      background: #fff;
+      margin: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 44px 30px;
+
+      div {
+        text-align: left;
+        width: 66%;
+
+        cite {
+          font-size: 13px;
+          color: $main-grey-color;
+          line-height: 22px;
+          position: relative;
+
+          &:before {
+            content: '';
+            background: url("../images/cite1.png");
+            height: 9px;
+            width: 11px;
+            position: absolute;
+            left: -18px;
+          }
+
+          &:after {
+            content: '';
+            background: url("../images/cite2.png");
+            height: 9px;
+            width: 11px;
+            position: absolute;
+            bottom: -2px;
+            right: -20px;
+          }
+        }
+
+        p {
+          font-size: 14px;
+          color: $light-grey-color;
+          font-family: $font-latoregular;
+          margin-top: 22px;
+          text-transform: uppercase;
+        }
+
+        .orange {
+          color: $dark-orange-color;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 738px) {
+  .clients {
+    padding-bottom: 60px;
+
+    .clients-list {
+      margin-top: 40px;
+
+      li {
+        width: 520px;
+        height: 260px;
+        margin: 10px;
+        justify-content: space-between;
+        padding: 10px;
+
+        div {
+          width: 57%;
+
+          cite {
+            font-size: 11px;
+            line-height: 0;
+
+            &:before {
+              content: '';
+              background: url("../images/cite1.png");
+              height: 9px;
+              width: 11px;
+              position: absolute;
+              left: -18px;
+            }
+          }
+
+          p {
+            font-size: 12px;
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}
